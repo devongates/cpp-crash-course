@@ -12,3 +12,6 @@ int main() {
     neuromancer.pages = 271;
     printf("Neuromancer has %d pages.\n", neuromancer.pages);
 }
+
+// OUTPUT:
+// Neuromancer has 271 pages.

@@ -12,3 +12,7 @@ int main() {
     }
     printf("%s\n", alphabet);
 }
+
+// OUTPUT:
+// abcdefghijklmnopqrstuvwxyz
+// ABCDEFGHIJKLMNOPQRSTUVWXYZ
