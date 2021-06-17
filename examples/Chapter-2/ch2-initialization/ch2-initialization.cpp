@@ -25,6 +25,11 @@ int main() {
     PodStruct initialized_pod2 = {};
     PodStruct initialized_pod3{ 42, "Hello" };
     PodStruct initialized_pod4{ 42, "Hello", true };
+
+    int array_1[]{ 1, 2, 3 };
+    int array_2[5]{};
+    int array_3[5]{ 1, 2, 3 };
+    int array_4[5];
     
     printf("a: %d\n", a);
     printf("b: %d\n", b);
@@ -42,6 +47,27 @@ int main() {
     printf("initialized_pod2: %" PRIu64 ", %s, %d\n", initialized_pod2.a, initialized_pod2.b, initialized_pod2.c);
     printf("initialized_pod3: %" PRIu64 ", %s, %d\n", initialized_pod3.a, initialized_pod3.b, initialized_pod3.c);
     printf("initialized_pod4: %" PRIu64 ", %s, %d\n", initialized_pod4.a, initialized_pod4.b, initialized_pod4.c);
+    printf("\n");
+
+    for (int el : array_1) {
+        printf("%d ", el);
+    }
+    printf("\n");
+    
+    for (int el : array_2) {
+        printf("%d ", el);
+    }
+    printf("\n");
+    
+    for (int el : array_3) {
+        printf("%d ", el);
+    }
+    printf("\n");
+    
+    for (int el : array_4) {
+        printf("%d ", el);
+    }
+    printf("\n");
 }
 
 // OUTPUT:
@@ -59,3 +85,8 @@ int main() {
 // initialized_pod2: 0, , 0
 // initialized_pod3: 42, Hello, 0
 // initialized_pod4: 42, Hello, 1
+
+// 1 2 3 
+// 0 0 0 0 0 
+// 1 2 3 0 0 
+// 0 0 0 0 0 
