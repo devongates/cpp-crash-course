@@ -26,7 +26,6 @@ struct Calculator {
         case Operation::Divide: {
             return a / b;
         } break;
-
         default:
             break;
         }
